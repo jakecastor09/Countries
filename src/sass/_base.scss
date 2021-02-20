@@ -1,0 +1,39 @@
+$color-dark-blue-1: hsl(209, 23%, 22%);
+$color-dark-blue-2: hsl(207, 26%, 17%);
+$color-dark-blue-3: hsl(200, 15%, 8%);
+$color-dark-gray: hsl(0, 0%, 52%);
+$color-light-gray: hsl(0, 0%, 98%);
+$color-white: hsl(0, 0%, 100%);
+
+*::after,
+*::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+$bp-xlarge: 78.125em;
+$bp-large: 59.125em;
+$bp-medium: 38.57em;
+$bp-small: 31.25em;
+$bp-xsmall: 61.66em;
+$bp-mPhone: 23.5em;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+  @media screen and (max-width: $bp-medium) {
+    font-size: 49.5%;
+  }
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: $color-light-gray;
+  color: $color-dark-blue-3;
+}

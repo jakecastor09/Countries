@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 148rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-top: 5rem;
+  @media screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+  &__search-bar {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding: 0 1rem;
+    justify-content: space-around;
+    box-shadow: 0.2rem 0.6rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    @media screen and (max-width: $bp-small) {
+      width: 100%;
+      padding: 0 1rem;
+      margin-bottom: 5rem;
+      align-self: center;
+      height: 6.5rem;
+    }
+    &:hover {
+      transform: scale(1.1) translateY(-0.5rem);
+      box-shadow: 0.4rem 0.8rem 1.7rem 0.7rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &__search-icon .fa-search {
+    font-size: 3rem;
+    color: $color-dark-gray;
+  }
+  &__search-icon .fa-search-dark {
+    color: $color-white;
+  }
+
+  &__input-search {
+    width: 80%;
+    padding: 1.5rem;
+    border: none;
+    font-size: 1.8rem;
+    background-color: inherit;
+    color: inherit;
+
+    &:focus {
+      outline: none;
+    }
+    &-dark::placeholder {
+      color: $color-white;
+    }
+  }
+  &__filter {
+    &-items {
+      font-size: 2rem;
+      border: none;
+      padding: 1.5rem 2.5rem;
+      background-color: $color-white;
+      color: $color-dark-blue-1;
+      box-shadow: 0.2rem 0.6rem 1.5rem 0.5rem rgba(0, 0, 0, 0.15);
+    }
+  }
+}
