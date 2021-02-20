@@ -4,10 +4,10 @@ import mainView from './views/mainView.js';
 import regionView from './views/regionView.js';
 import darkModeView from './views/darkModeView.js';
 import countryDetailsView from './views/countryDetailsView.js';
-import { async } from 'regenerator-runtime';
 
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import { async } from 'regenerator-runtime';
 
 const controlContries = async function () {
   try {
